@@ -1,0 +1,14 @@
+.card {
+  border: 4px solid #E88DB9;
+}
+.hero {
+    background-color: #457579;
+}
+#title {
+  font-size: 3.5rem;
+  font-family: 'Lobster', cursive;
+  color: #E08F34;
+  text-shadow: 1px 0px 1px white;
+  margin: auto;
+  padding-top: 10%;
+}
