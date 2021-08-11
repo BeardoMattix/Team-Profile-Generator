@@ -1,25 +1,8 @@
-class Employee {
-    constructor(name, id, email, officeNumber) {
-        this,name = name;
-        this.id = id;
-        this.email = email;
-        this.officeNumber = officeNumber;
-    }
-}
-
-
-/* Employee Object Requirements 
-Employee Types: 
-* Manager
-* Engineer
-* Intern
-
-Manager/Employee Information:
-Name, ID, Email, Office Number
-
-Functions:
-
-getName()
-getID()
-getEmail()
-getRole()
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
+const writeFileAsync = util.promisify(fs.writeFile);
+const generateHTML = require("./src/generateHTML")
