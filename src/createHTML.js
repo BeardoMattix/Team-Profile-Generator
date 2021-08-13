@@ -1,6 +1,6 @@
-const managerCard = (managerArray) => {
+const managerCard = managerArray => {
   let card = "";
-  for (const manager of managerArray) {
+  for ( const manager of managerArray) {
     card += `
         <div class="card" id="manager-card">
                 <div class="card-content">
@@ -16,7 +16,7 @@ const managerCard = (managerArray) => {
                         Manager
                       </p>
                       <p class="subtitle is-6 has-text-dark">ID: ${manager.id}</p>
-                      <p class="subtitle is-6 has-text-dark">Email:${manager.email}</p>
+                      <p class="subtitle is-6 has-text-dark">Email: ${manager.email}</p>
                       <p class="subtitle is-6 has-text-dark">Office Number: ${manager.officeNumber}</p>
                     </div>
                   </div>
@@ -26,12 +26,13 @@ const managerCard = (managerArray) => {
                   </div>
                 </div>
               </div>
+        </div>
         `;
   }
   return card;
 };
 
-const engineerCard = (engineerArray) => {
+const engineerCard = engineerArray => {
   let card = "";
   for (const engineer of engineerArray) {
     card += `
@@ -50,18 +51,20 @@ const engineerCard = (engineerArray) => {
                       </p>
                       <p class="subtitle is-6 has-text-dark">ID: ${engineer.id}</p>
                       <p class="subtitle is-6 has-text-dark">Email: ${engineer.email}</p>
-                      <p class="subtitle is-6 has-text-dark">GitHub Profile: <a href="https://github.com/${engineer.github}</a> "</p>
+                      <p class="subtitle is-6 has-text-dark">GitHub Profile: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p> 
+                      
                       
                     </div>
                   </div>
                 </div>
               </div>
+        </div>
         `;
   }
   return card;
 };
 
-const internCard = (internArray) => {
+const internCard = internArray => {
   let card = "";
   for (const intern of internArray) {
     card += `
@@ -83,12 +86,9 @@ const internCard = (internArray) => {
                       <p class="subtitle is-6 has-text-dark">School: ${intern.school}</p>
                     </div>
                   </div>
-                  <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
-                  </div>
                 </div>
               </div>
+        </div>
         `;
   }
   return card;
