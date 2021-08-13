@@ -1,6 +1,6 @@
-const managerCard = managerArray => {
+const managerCard = (managerArray) => {
   let card = "";
-  for ( const manager of managerArray) {
+  for (const manager of managerArray) {
     card += `
         <div class="card" id="manager-card">
                 <div class="card-content">
@@ -15,15 +15,12 @@ const managerCard = managerArray => {
                       >
                         Manager
                       </p>
-                      <p class="subtitle is-6 has-text-dark">ID: ${manager.id}</p>
-                      <p class="subtitle is-6 has-text-dark">Email: ${manager.email}</p>
-                      <p class="subtitle is-6 has-text-dark">Office Number: ${manager.officeNumber}</p>
+                      <p class="subtitle is-6 has-text-dark"><strong>ID: </strong> ${manager.id}</p>
+                      <p class="subtitle is-6 has-text-dark"><strong>Email: </strong><a href="mailto:${manager.email}">${manager.email}</a></p>
+                      <p class="subtitle is-6 has-text-dark"><strong>Office Number: </strong> ${manager.officeNumber}</p>
                     </div>
                   </div>
-                  <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
-                  </div>
+                  
                 </div>
               </div>
         </div>
@@ -32,7 +29,7 @@ const managerCard = managerArray => {
   return card;
 };
 
-const engineerCard = engineerArray => {
+const engineerCard = (engineerArray) => {
   let card = "";
   for (const engineer of engineerArray) {
     card += `
@@ -45,13 +42,13 @@ const engineerCard = engineerArray => {
                         <i class="fas fa-tools"></i> ${engineer.name}
                       </p>
                       <p
-                        class="subtitle has-text-weight-bold is-6 has-text-dark"
+                      class="subtitle has-text-weight-bold is-6 has-text-dark"
                       >
                         Engineer
                       </p>
-                      <p class="subtitle is-6 has-text-dark">ID: ${engineer.id}</p>
-                      <p class="subtitle is-6 has-text-dark">Email: ${engineer.email}</p>
-                      <p class="subtitle is-6 has-text-dark">GitHub Profile: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p> 
+                      <p class="subtitle is-6 has-text-dark"><strong>ID:</strong> ${engineer.id}</p>
+                      <p class="subtitle is-6 has-text-dark"><strong>Email:</strong> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+                      <p class="subtitle is-6 has-text-dark"><strong>GitHub Profile:</strong> <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p> 
                       
                       
                     </div>
@@ -64,7 +61,7 @@ const engineerCard = engineerArray => {
   return card;
 };
 
-const internCard = internArray => {
+const internCard = (internArray) => {
   let card = "";
   for (const intern of internArray) {
     card += `
@@ -77,13 +74,13 @@ const internCard = internArray => {
                         <i class="fas fa-mug-hot"></i> ${intern.name}
                       </p>
                       <p
-                        class="subtitle has-text-weight-bold is-6 has-text-dark"
+                      class="subtitle has-text-weight-bold is-6 has-text-dark"
                       >
                         Intern
                       </p>
-                      <p class="subtitle is-6 has-text-dark">ID: ${intern.id}</p>
-                      <p class="subtitle is-6 has-text-dark">Email: ${intern.email}</p>
-                      <p class="subtitle is-6 has-text-dark">School: ${intern.school}</p>
+                      <p class="subtitle is-6 has-text-dark"><strong>ID:</strong> ${intern.id}</p>
+                      <p class="subtitle is-6 has-text-dark"><strong>Email:</strong> <a href="mailto:${intern.email}">${intern.email}</a></p>
+                      <p class="subtitle is-6 has-text-dark"><strong>School:</strong> ${intern.school}</p>
                     </div>
                   </div>
                 </div>

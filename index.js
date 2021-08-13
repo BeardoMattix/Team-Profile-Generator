@@ -69,7 +69,7 @@ const addNewMembers = async () => {
     addMoreMembersObj = await inquirer.prompt(addNewMemberQuestion);
     addMember = await addMoreMembersObj.addAnotherMember;
     if (addMember === "Yes") {
-      await createHTML();
+      await createTeam();
     }
   }
 };
