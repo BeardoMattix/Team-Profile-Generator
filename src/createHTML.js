@@ -50,12 +50,9 @@ const engineerCard = (engineerArray) => {
                       </p>
                       <p class="subtitle is-6 has-text-dark">ID: ${engineer.id}</p>
                       <p class="subtitle is-6 has-text-dark">Email: ${engineer.email}</p>
-                      <p class="subtitle is-6 has-text-dark">GitHub Profile: ${engineer.github}</p>
+                      <p class="subtitle is-6 has-text-dark">GitHub Profile: <a href="https://github.com/${engineer.github}</a> "</p>
+                      
                     </div>
-                  </div>
-                  <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
                   </div>
                 </div>
               </div>
@@ -143,7 +140,7 @@ const createHTML = (managerArray, engineerArray, internArray) => {
     </main>
   </body>
 </html>
-    `;
+`;
 };
 
 // Exporting to use with the createHTML function in index.js

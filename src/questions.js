@@ -1,3 +1,4 @@
+
 const employeeQuestions = [
   {
     type: "input",
@@ -7,12 +8,13 @@ const employeeQuestions = [
   {
     type: "list",
     message: "Please enter the team member's role:",
-    choices: ["Manager", "Engineer", "Intern"]
+    choices: ["Manager", "Engineer", "Intern"],
+    name: "role",
   },
   {
     type: "input",
     message: "Please enter the team member's ID:",
-    name: "ID",
+    name: "id",
   },
   {
     type: "input",
@@ -22,41 +24,41 @@ const employeeQuestions = [
 ];
 
 const managerQuestions = [
-    {
-      type: "input",
-      message: "Please enter the manager's office number:",
-      name: "office number",
-    },
-  ];
+  {
+    type: "input",
+    message: "Please enter the manager's office number:",
+    name: "officeNumber",
+  },
+];
 
-  const engineerQuestions = [
-    {
-        type: "input",
-        message: "What is the engineer's GitHub user name?",
-        name: "github"
-      },
-  ]
-  const internQuestions = [
-    {
-        type: "input",
-        message: "Where does this intern attend school?",
-        name: "school"
-      },
-  ]
+const engineerQuestions = [
+  {
+    type: "input",
+    message: "What is the engineer's GitHub user name?",
+    name: "github",
+  },
+];
+const internQuestions = [
+  {
+    type: "input",
+    message: "Where does this intern attend school?",
+    name: "school",
+  },
+];
 
-  const addNewMember = [
-    {
-      type: "list",
-      message: "Would you like to add a new team member?",
-      choices: ["Yes", "No"],
-      name: "add member",
-    },
-  ];
+const addNewMemberQuestion = [
+  {
+    type: "list",
+    message: "Would you like to add a new team member?",
+    choices: ["Yes", "No"],
+    name: "addAnotherMember",
+  },
+];
 
-  module.exports = {
-      employeeQuestions,
-      managerQuestions,
-      engineerQuestions,
-      internQuestions,
-      addNewMember,
-  };
+module.exports = {
+  employeeQuestions,
+  managerQuestions,
+  engineerQuestions,
+  internQuestions,
+  addNewMemberQuestion,
+};

@@ -1,17 +1,17 @@
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
+const Manager = require("./lib/manager");
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-// const generateHTML = require("./src/generateHTML")
+const createHTML = require("./src/createHTML")
 const {
     employeeQuestions,
     managerQuestions,
     engineerQuestions,
     internQuestions,
-    addNewMember,
+    addNewMemberQuestion,
 } = require("./src/questions");
 
 const managerArray = [];
@@ -29,7 +29,7 @@ const createTeam = async () => {
                     employee.name,
                     employee.id,
                     employee.email,
-                    employee.officeNumber
+                    officeObj.officeNumber
                     );
                     managerArray.push(manager);
                     break;
@@ -40,7 +40,7 @@ const createTeam = async () => {
                     employee.name,
                     employee.id,
                     employee.email,
-                    employee.github,
+                    gitHubObj.github
                 );
                 engineerArray.push(engineer);
                 break;
@@ -51,7 +51,7 @@ const createTeam = async () => {
                     employee.name,
                     employee.id,
                     employee.email,
-                    employee.school,
+                    schoolObj.school
                 );
                 internArray.push(intern);
                 break;
@@ -62,3 +62,32 @@ const createTeam = async () => {
         console.log(error);
     }
 };
+
+// const addNewMember = async () => {
+//     let addMember = "Yes";
+//     let newMembersObj; 
+//     while (addMember = "Yes") {
+//         newMemberObj = await inquirer.prompt(addNewMemberQuestion);
+//         addMember = await newMembersObj.addMember;
+//         if (addMember === "Yes") {
+//             await createTeam();
+//         }
+//     }
+// };
+
+const init = async () => {
+    try {
+        await createTeam();
+        // await addNewMember();
+        await writeFileAsync("./dist/index.html", 
+        createHTML(managerArray, engineerArray, internArray)
+        );
+        console.log("Your team has been updated in index.html");
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+init();
+
+
