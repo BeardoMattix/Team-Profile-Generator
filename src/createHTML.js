@@ -7,11 +7,12 @@ const managerCard = (managerArray) => {
                   <div class="media">
                     <div class="media-left"></div>
                     <div class="media-content">
-                      <p class="title is-4 has-text-dark">
-                        <i class="fas fa-tasks"></i> ${manager.name}
+                    <p class="title is-2 has-text-info has-text-centered"><i class="fas fa-tasks"></i></p>
+                      <p class="title is-4 has-text-dark has-text-centered"> 
+                      ${manager.name}
                       </p>
                       <p
-                        class="subtitle has-text-weight-bold is-6 has-text-dark"
+                        class="subtitle has-text-weight-bold is-6 has-text-dark has-text-centered"
                       >
                         Manager
                       </p>

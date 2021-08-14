@@ -3,6 +3,8 @@ a {
 }
 .card {
     border: 4px solid #E88DB9;
+    box-shadow: 3px 3px 3px #000000;
+    border-radius: 10px;
   }
   .hero {
       background-color: #457579;
