@@ -32,7 +32,7 @@ This application allows the user to easily add and update an oganizational team 
 This application uses Node.js, the 'Jest' npm, and the 'Inquirer' npm to create a team profile html page by inputing information in the command line. When the application is initialized, the user is asked the name of the team member they are adding. The user then selects a role (manager, engineer, or intern) and is presented with a set of questions about that team member. The manager, engineer, and intern classes all have an additional question that is specific to that role. Once the user is finished inputting information about a team member, they are given the option to add more members. If they select "Yes" the application starts over. If they select "NO" the application terminates and creates an HTML page in the 'dist' folder.
 
 ## Demo
-
+https://user-images.githubusercontent.com/82903201/129486926-738adc84-e5ad-46c0-92e5-74a90765309f.mp4
 
 ## Example HTML Page
 #### The example Team Profile was generated using the Team Profile Generator application I built. The HTML file represented in these screentshots is located in the "dist" folder.
