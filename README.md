@@ -1,7 +1,7 @@
 
 
 # <p align="center">Welcome to my Team Profile Generator!</p> 
-## <p align="center">A command line application for creating a team profile html page.</p>
+## <p align="center">A command line application for generating a team profile website.</p>
 
 ## Link to Deployed Site
 
@@ -12,7 +12,6 @@
   * [Challenges](#challenges)
   * [Usage](#usage)
   * [Test](#test)
-  * [Contributors](#contributors)
   * [License](#license)
   * [Questions](#questions)
 
@@ -56,6 +55,9 @@ This application uses Node.js, the 'Jest' npm, and the 'Inquirer' npm to create 
 * Enter 'npm init' in command line
 * Enter 'npm i' in the command line
 * Enter 'node index.js' in the command line
+
+## Test 
+This application has been thoroughly tested using the "Jest" npm.
 
 ## Future Development
 * Improve the overall appearance of the html page.
