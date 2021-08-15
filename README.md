@@ -34,9 +34,9 @@ This application uses Node.js, the 'Jest' npm, and the 'Inquirer' npm to create 
 ## Demo
 
 
-## Example README.md
+## Example HTML Page
 #### The example Team Profile was generated using the Team Profile Generator application I built. The HTML file represented in these screentshots is located in the "dist" folder.
-
+<img width="1136" alt="Screen Shot 2021-08-15 at 1 12 26 PM" src="https://user-images.githubusercontent.com/82903201/129486659-30a53200-04c7-4db7-b17e-3fc939f2fab7.png">
 
 ## Challenges
 
