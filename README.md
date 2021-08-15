@@ -69,4 +69,4 @@ This application uses Node.js, the 'Jest' npm, and the 'Inquirer' npm to create 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
 
-![badge](https://img.shields.io/static/v1?label=License&message=gpl-3.0&color=success)
+![badge](https://img.shields.io/static/v1?label=License&message=MIT&color=success)
