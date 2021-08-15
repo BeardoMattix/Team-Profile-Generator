@@ -17,7 +17,7 @@
 
 ## Description
 
-This application allows the user to easily add and update a oganizational team profile page from the command line. 
+This application allows the user to easily add and update an oganizational team profile page from the command line. It uses node.js, JavaScript, and the Iquirer and Jest npm packages to dynamically render team information based on specific roles. Styles are created using a combination of CSS and Bulma.
  
 ## Technologies
 * HTML
