@@ -39,11 +39,12 @@ const engineerCard = (engineerArray) => {
                   <div class="media">
                     <div class="media-left"></div>
                     <div class="media-content">
-                      <p class="title is-4 has-text-dark">
-                        <i class="fas fa-tools"></i> ${engineer.name}
+                      <p class="title is-4 has-text-primary has-text-centered">
+                        <i class="fas fa-tools"></i> 
                       </p>
+                      <p class="title is-4 has-text-dark has-text-centered"> ${engineer.name}</p>
                       <p
-                      class="subtitle has-text-weight-bold is-6 has-text-dark"
+                      class="subtitle has-text-weight-bold is-6 has-text-dark has-text-centered"
                       >
                         Engineer
                       </p>
@@ -71,11 +72,12 @@ const internCard = (internArray) => {
                   <div class="media">
                     <div class="media-left"></div>
                     <div class="media-content">
-                      <p class="title is-4 has-text-dark">
-                        <i class="fas fa-mug-hot"></i> ${intern.name}
+                      <p class="title is-4 has-text-danger has-text-centered">
+                        <i class="fas fa-mug-hot"></i> 
                       </p>
+                      <p class="title is-4 has-text-dark has-text-centered"> ${intern.name}</p>
                       <p
-                      class="subtitle has-text-weight-bold is-6 has-text-dark"
+                      class="subtitle has-text-weight-bold is-6 has-text-dark has-text-centered"
                       >
                         Intern
                       </p>
@@ -125,7 +127,7 @@ const createHTML = (managerArray, engineerArray, internArray) => {
       <section class="hero is-fullheight">
         <p class="title" id="title">Meet Our Team:</p>
         <div class="hero-body">
-          <div class="columns">
+          <div class="columns is-desktop">
             <div class="column">
             ${managerCard(managerArray)}
             <div class="column">
